@@ -85,7 +85,7 @@ async def genStr(_, msg: Message):
             chat.id, ("OTP dikirim ke nomor telepon lu bro, "
                       "masukan OTP nya bro contoh `1 2 3 4 5` format. __(kasih Spasi di antara setiap angka!)__ \n\n"
                       "Jika bot tidak mengirim OTP Coba  /restart dan Mulai Tugas lagi dengan /start command to Bot.\n"
-                      "Tekan /cancel to Cancel."), waktu habis=300)
+                      "Press /cancel to Cancel."), timeout=300)
 
     except TimeoutError:
         await msg.reply("Time limit reached of 5 min.\nPress /start to Start again.")
